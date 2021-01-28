@@ -1,0 +1,20 @@
+{
+  "name": "writeydrawey.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kevee/writeydrawey.com.git",
+  "author": "Kevin Miller <keveemiller@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "gatsby": "^2.31.1",
+    "gh-pages": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "scripts": {
+    "deploy": "gatsby build && echo \"writeydrawey.com\" > ./public/CNAME && gh-pages -d public -b gh-pages"
+  }
+}
