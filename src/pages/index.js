@@ -64,7 +64,7 @@ const Homepage = () => {
             and writes down a sentence or two:
           </p>
           <SampleSentence>
-            The pomegranites were floating in the open ocean.
+            The pomegranates were floating in the open ocean.
           </SampleSentence>
           <p>
             You then pass your paper to the person to your right. They draw a
