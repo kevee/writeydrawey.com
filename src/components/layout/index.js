@@ -9,53 +9,51 @@ const Footer = styled.footer`
   padding: 3rem;
 `
 
-const SEO = ({ title, description }) => {
-  return (
-    <Location>
-      {({ location }) => (
-        <Helmet
-          title={title}
-          defaultTitle="Writey Drawey"
-          titleTemplate={`%s | Writey Drawey`}
-          meta={[
-            {
-              property: `og:site_name`,
-              content: 'Writey Drawey',
-            },
-            {
-              property: `og:type`,
-              content: 'website',
-            },
-            {
-              property: `og:title`,
-              content: title,
-            },
-            {
-              property: `og:url`,
-              content: `https://writeydrawey.com${location.pathname}`,
-            },
-            {
-              property: `og:description`,
-              content: description,
-            },
-            {
-              name: `twitter:title`,
-              content: title,
-            },
-            {
-              name: `twitter:card`,
-              content: 'summary_large_image',
-            },
-            {
-              name: 'description',
-              content: description,
-            },
-          ]}
-        />
-      )}
-    </Location>
-  )
-}
+const SEO = ({ title, description }) => (
+  <Location>
+    {({ location }) => (
+      <Helmet
+        title={title}
+        defaultTitle="Writey Drawey"
+        titleTemplate={`%s | Writey Drawey`}
+        meta={[
+          {
+            property: `og:site_name`,
+            content: 'Writey Drawey',
+          },
+          {
+            property: `og:type`,
+            content: 'website',
+          },
+          {
+            property: `og:title`,
+            content: title,
+          },
+          {
+            property: `og:url`,
+            content: `https://writeydrawey.com${location.pathname}`,
+          },
+          {
+            property: `og:description`,
+            content: description,
+          },
+          {
+            name: `twitter:title`,
+            content: title,
+          },
+          {
+            name: `twitter:card`,
+            content: 'summary_large_image',
+          },
+          {
+            name: 'description',
+            content: description,
+          },
+        ]}
+      />
+    )}
+  </Location>
+)
 
 const Layout = ({ children, description, title }) => (
   <>
