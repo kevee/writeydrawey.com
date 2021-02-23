@@ -10,7 +10,8 @@ import {
 } from '../components/common/paper'
 
 const SampleSentence = styled.blockquote`
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Indie Flower', cursive;
 `
 const SampleImage = styled.img`
   max-width: 300px;

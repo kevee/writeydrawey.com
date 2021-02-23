@@ -60,6 +60,7 @@ const Layout = ({ children, description, title }) => (
     <SEO title={title} description={description} />
     <Global
       styles={css`
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
         :root {
           font-size: 18px;
         }
