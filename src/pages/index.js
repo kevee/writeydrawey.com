@@ -8,6 +8,7 @@ import {
   PaperHole,
   PaperSide,
 } from '../components/common/paper'
+import PostIt from '../components/common/post-it'
 
 const SampleSentence = styled.blockquote`
   font-size: 2.5rem;
@@ -60,6 +61,8 @@ const Homepage = () => {
           >
             Start playing
           </LoginButton>
+          <PostIt>The perfect game for your next zoom call!!</PostIt>
+
           <p>
             A game where everyone wins. Everyone starts with a piece of paper,
             and writes down a sentence or two:

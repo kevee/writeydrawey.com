@@ -25,6 +25,7 @@ const Paper = styled.div`
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   background: #ffffff;
   width: 90%;
+  max-width: 800px;
   margin: 1rem auto;
   border-radius: 0 15px 15px 0;
 
@@ -47,6 +48,7 @@ const PaperContent = styled.div`
   border-left: 2.5px solid pink;
   min-height: 50vh;
   width: 100%;
+  position: relative;
 `
 
 const PaperHole = styled.div`
